@@ -1,0 +1,380 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Poppins';
+}
+html{
+    scroll-behavior: smooth;
+}
+html,body{
+    overflow-x: hidden;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+::before,::after{
+    box-sizing: border-box;
+}
+.section {
+  display: none;
+  margin-left: 270px; 
+  min-height: 100vh;
+  padding: 0 30px;
+  max-width: 1200px;
+}
+.section.active {
+  display: block;
+}
+
+
+/* side bar.................................................................................*/
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.hidden{
+    display: none !important;
+}
+.active{
+    display: block !important;
+}
+.section
+.home-section{
+    min-height: 100vh;
+    display: block;
+    padding: 0px 30px;
+    position:relative;
+    top: 0;
+    right: 0;
+}
+.aside{
+    width: 270px;
+    height: 100%;
+    padding: 30px;
+    border-right: 1px solid rgb(214, 212, 212);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.logo{
+    position: absolute;
+    top: 50px;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+.logo a{
+    font-weight: 600;
+    position: relative;
+    letter-spacing: 3px;
+    padding: 15px 20px;
+    color:black;
+}
+.logo a span{
+    font-family: 'Clicker Script',cursive;
+    font-size: 30px;
+    color:red;
+}
+.logo a::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-bottom: 5px solid red;
+    border-left: 5px solid red;
+    bottom: 0;
+    left: 0;
+}
+.logo a::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-top: 5px solid red;
+    border-right: 5px solid red;
+    top: 0;
+    right: 0;
+}
+.nav{
+    margin-top: 50px;
+}
+.nav-item{
+    margin-bottom: 20px;
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    padding: 13px 15px;
+    border-bottom: 1px solid grey;
+    color:black;
+}
+.nav-item.active{
+    color: red;
+}
+
+/* home......................................................................................*/
+
+.my-img img{
+    height: 380px;
+    width: 290px;   
+    margin-left: 680px;
+    margin-top: -320px;
+}
+.container{
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}
+.row{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+}
+h1.hello{
+    font-size: 28px;
+    margin: 15px 0px;
+    margin-top: 180px;
+}
+h1.hello span{
+    font-family: 'Clicker Script',cursive;
+    font-size: 35px;
+    font-weight:600;
+    color: red;
+}
+h1.profession {
+    font-size: 29px;
+    margin: 15px 0;
+}
+.home-info p{
+    font-size: 20px;
+}
+.type{
+    color: red;
+}
+.home-info .hire-me{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 25px;
+    color: white;
+    border-radius: 40px;
+    background-color: red;
+    border: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    margin-top: 55px;
+}
+.hire-me:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background-color: rgb(155, 9, 9);
+    cursor: pointer;
+}
+.my-img::after{
+    content: '';
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    border-top: 10px solid red;
+    border-right: 10px solid red;
+    top: 100px;
+    right: 15px;
+}
+.my-img::before{
+    content: '';
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    border-bottom: 10px solid red;
+    border-left: 10px solid red;
+    bottom: -35px;
+    left: 620px;
+}
+
+/* about section....................................................................................*/
+
+.about-section{
+    padding-top: 60px;
+    margin-top: -20px;
+    width: 100%;
+}
+.title h2{
+    font-size: 30px;
+    position: relative;
+}
+.title h2::before{
+    content: '';
+    height: 4px;
+    width: 50px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: red;
+}
+.title h2::after{
+    content: '';
+    height: 4px;
+    width: 25px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: red;
+    margin-top: 8px;
+}
+.about-content{
+    margin-top: 45px;
+}
+.about-content p{
+    margin-top: 28px;
+    font-size: 17.5px;
+}
+.about-content h3{
+    font-size: 23px;
+}
+.about-content h3 span{
+    color: red;
+}
+.about-info{
+    margin-top: 40px;
+}
+.about-info p{
+    border-bottom: 1px solid rgb(214, 212, 212);
+    width: 290px;
+}
+.about-info .right{
+    margin-top: -160px;
+    margin-left: 330px;
+}
+.about-info .left,
+.about-info .right {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.linkedln{
+    color: blue;
+}
+.hire,.cv{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 25px;
+    color: white;
+    border-radius: 40px;
+    background-color: red;
+    border: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    margin-top: 100px;
+    gap: 10px;
+}
+.hire{
+    margin-left: 25px;
+}
+.hire:hover,.cv:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background-color: rgb(155, 9, 9);
+    cursor: pointer;
+}
+.skills-section{
+    margin-top: 70px;
+    margin-left: 600px;
+    width: 330px;
+}
+.skills-section h3{
+    text-decoration: underline;
+    font-family: 'Clicker Script';
+    font-size: 30.5px;
+    color: black;
+    margin-left: 125px;
+    margin-top: 18px;
+}
+.about-info .cv,
+.about-info .hire{
+    margin-top: 600px;
+}
+.percent {
+  background-color: grey;
+  height: 7px;
+  border-radius: 4px;
+  width: 100%;
+  position: relative;
+}
+.color-line {
+  background-color: red;  
+  height: 100%;
+  width: 70%; 
+  border-radius: 4px;
+}
+.box-shade h3{
+    text-decoration: underline;
+    font-family: 'Clicker Script';
+    font-size: 30.5px;
+    color: black;
+    margin-left: 5px;
+    margin-top: -90px;
+}
+.box-shade{
+    background-color:  rgb(253, 248, 248);
+    padding: 30px 15px;
+    width: 500px;
+    border-radius: 10px;
+    position: relative;
+    border: 1px solid rgb(238, 233, 233);
+    height: 405px;
+    margin-top: -247px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.edu-item{
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    line-height: 0.75cm;
+    margin-left: 25px;
+    display: block;
+    position: relative;
+}
+.edu-item i{
+    font-weight: 600;
+    font-size: larger;
+    color: rgb(187, 6, 6);
+    margin-left: 330px;
+    margin-top: 2px;
+    position: absolute;
+}
+.edu-item i span{
+    color: black;
+}
+.edu-item h4{
+    color: rgb(187, 6, 6);
+}
+.education::before{
+    content: '';
+    width: 2px;
+    position:absolute;
+    height: 90%;
+    left: px;
+    top: 0;
+    margin-top: 20px;
+    background-color:rgb(187, 6, 6);
+}
+.circle{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color:rgb(187, 6, 6);
+    margin-left: -32px;
+    position: absolute;
+    margin-top: 7px;
+}
